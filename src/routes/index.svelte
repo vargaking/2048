@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="container">
+    <div class="heading">
+        <div class="title"></div>
+        <div class="high-scores"></div>
+    </div>
+    <div class="game">
+        <div class="game-board"></div>
+        <div class="game-info"></div>
+    </div>
+</div>

@@ -1,3 +1,9 @@
+<script lang="ts">
+    import {Game} from "$lib/logic";
+
+    const game = new Game();
+    game.generateBlock();
+</script>
 <div class="container">
     <div class="heading">
         <div class="title"></div>

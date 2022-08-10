@@ -1,7 +1,10 @@
 <div class="container">
     <div class="heading">
         <div class="title"></div>
-        <div class="high-scores"></div>
+        <div class="subtitle">
+            <div class="new-game"></div>
+            <div class="high-scores"></div>
+        </div>
     </div>
     <div class="game">
         <div class="game-board"></div>

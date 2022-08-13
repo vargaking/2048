@@ -7,6 +7,9 @@
     let board = game.getBoard();
 
     function handleKeydown(event: KeyboardEvent) {
+        if (event.key !== "ArrowUp" && event.key !== "ArrowDown" && event.key !== "ArrowLeft" && event.key !== "ArrowRight") {
+            return;
+        }
         let pressedKey: string = event.key;
         console.log(pressedKey);
         game.move(pressedKey);

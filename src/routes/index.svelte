@@ -11,6 +11,13 @@
         console.log(pressedKey);
         game.move(pressedKey);
         board = game.getBoard();
+        if (game.checkForWin()) {
+            alert("You win!");
+        }
+
+        if (game.checkForLose()) {
+            alert("You lose!");
+        }
     }
 
 </script>

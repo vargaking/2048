@@ -1,0 +1,68 @@
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $purple;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+
+.cell-0 {
+    background-color: $cell;
+}
+
+.cell:not(.cell-0) .value {
+    color: $white;
+}
+
+.cell-2 {
+    background-color: #3c0e6e;
+}
+
+.cell-4 {
+    background-color: #51178f;
+}
+
+.cell-8 {
+    background-color: #6a2faa;
+}
+
+.cell-16 {
+    background-color: #762f97;
+}
+
+.cell-32 {
+    background-color: #ab3c7b;
+}
+
+.cell-64 {
+    background-color: #c23598;
+}
+
+.cell-128 {
+    background-color: #be257c;
+}
+
+.cell-256 {
+    background-color: #d72f8f;
+}
+
+.cell-512 {
+    background-color: #dc2ec8;
+}
+
+.cell-1024 {
+    background-color: #dd24e7;
+}
+
+.cell-2048 {
+    background-color: #d139ec;
+}
+
+.cell .value {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    color: $purple;
+}

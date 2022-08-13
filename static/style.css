@@ -56,13 +56,18 @@ table {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10%;
 }
 
 .grid-cell {
-  border: 1px solid rgb(63, 0, 100);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: transparent;
+  background-color: rgb(148, 27, 138);
   margin: 5px;
 }
 
@@ -70,14 +75,17 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(63, 0, 100);
+  border: 1px solid rgb(92, 10, 105);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 5px;
 }
 
 .cell-0 {
-  background-color: transparent;
+  background-color: rgb(148, 27, 138);
+}
+.cell-0 .value {
+  color: transparent !important;
 }
 
 .cell:not(.cell-0) .value {
@@ -97,54 +105,54 @@ table {
 }
 
 .cell-16 {
-  background-color: #832faa;
+  background-color: #762f97;
 }
 
 .cell-32 {
-  background-color: #9742a2;
+  background-color: #ab3c7b;
 }
 
 .cell-64 {
-  background-color: #9742a2;
+  background-color: #c23598;
 }
 
 .cell-128 {
-  background-color: #9742a2;
+  background-color: #be257c;
 }
 
 .cell-256 {
-  background-color: #9742a2;
+  background-color: #d72f8f;
 }
 
 .cell-512 {
-  background-color: #9742a2;
+  background-color: #dc2ec8;
 }
 
 .cell-1024 {
-  background-color: #9742a2;
+  background-color: #dd24e7;
 }
 
 .cell-2048 {
-  background-color: #9742a2;
+  background-color: #d139ec;
 }
 
 .cell .value {
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
-  color: rgb(63, 0, 100);
+  color: rgb(92, 10, 105);
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  background-color: rgb(63, 0, 100);
+  background-color: rgb(92, 10, 105);
 }
 
 .container {
   width: 60%;
   height: 70%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(92, 10, 105);
   position: absolute;
   position: absolute;
   top: 50%;
@@ -153,26 +161,13 @@ body {
 }
 
 .game {
-  width: 70%;
-  height: 70%;
-  background-color: rgb(63, 0, 100);
+  width: 50vh;
+  height: 50vh;
+  background-color: rgb(92, 10, 105);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 24px;
-}
-
-.game-board {
-  width: 90%;
-  height: 90%;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(63, 0, 100);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

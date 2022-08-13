@@ -7,7 +7,7 @@ body {
 
 .container {
     @include size(60%, 70%);
-    background-color: $white;
+    background-color: $purple;
 
     // center the container
     position: absolute;
@@ -15,7 +15,7 @@ body {
 }
 
 .game {
-    @include size(70%);
+    @include size(50vh);
     background-color: $purple;
 
     // center horizontally and place to the bottom
@@ -24,13 +24,3 @@ body {
 
 }
 
-.game-board {
-    @include size(90%);
-    background-color: $white;
-    border: 1px solid $purple;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
-    @include centerHorizontally;
-    bottom: 10%;
-}

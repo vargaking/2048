@@ -2,12 +2,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    @include size(90%);
+    border-radius: 5px;    
+    @include centerHorizontally;
+    bottom: 10%;
 }
 
 .grid-cell {
-    border: 1px solid $purple;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: $cell;
     margin: 5px;
     //@include centerHorizontally;
